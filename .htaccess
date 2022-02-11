@@ -1,0 +1,7 @@
+RewriteEngine on
+
+RewriteRule ^kongan-academy konganacademy.html [NC,L]
+
+RewriteCond %{SERVER_PORT} 80
+RewriteCond %{HTTP_HOST} ^(www\.)?konganevents\.com
+RewriteRule ^(.*)$ https://www.konganevents.com/$1 [R,L]
